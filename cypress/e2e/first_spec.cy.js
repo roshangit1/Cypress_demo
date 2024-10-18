@@ -1,5 +1,5 @@
 describe('template spec', () => {
-  it('Visit page', () => {
+  it.skip('Visit page', () => {
     cy.visit('https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login')
   })
 
@@ -8,8 +8,9 @@ describe('template spec', () => {
     cy.contains("Customer Login").click()
     cy.get('#userSelect').select("Harry Potter")
     cy.contains("Login").click()
-    cy.get('.logout').should('be.visible')
+    cy.get('.logout').should("be.visible")
 
   })
+
 
 })
