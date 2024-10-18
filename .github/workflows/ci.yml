@@ -28,4 +28,4 @@ jobs:
         run: npm install cypress
 
       - name: Run Cypress tests
-        run: npx cypress run first_spec.cy.js
+        run: npx cypress run first_spec.cy.js --record --key cf3e90f2-045b-406e-80fc-a5a35d5f0d1e
